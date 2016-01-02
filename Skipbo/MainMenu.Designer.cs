@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.singlePlayer = new System.Windows.Forms.Label();
             this.multiPlayer = new System.Windows.Forms.Label();
+            this.close = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -46,6 +47,7 @@
             // singlePlayer
             // 
             this.singlePlayer.AutoSize = true;
+            this.singlePlayer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.singlePlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.singlePlayer.Location = new System.Drawing.Point(192, 144);
             this.singlePlayer.Name = "singlePlayer";
@@ -57,12 +59,26 @@
             // multiPlayer
             // 
             this.multiPlayer.AutoSize = true;
+            this.multiPlayer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.multiPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.multiPlayer.Location = new System.Drawing.Point(192, 198);
+            this.multiPlayer.Location = new System.Drawing.Point(203, 201);
             this.multiPlayer.Name = "multiPlayer";
             this.multiPlayer.Size = new System.Drawing.Size(171, 36);
             this.multiPlayer.TabIndex = 2;
             this.multiPlayer.Text = "Multi Player";
+            this.multiPlayer.Click += new System.EventHandler(this.multiPlayer_Click);
+            // 
+            // close
+            // 
+            this.close.AutoSize = true;
+            this.close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.close.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.close.Location = new System.Drawing.Point(236, 256);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(91, 36);
+            this.close.TabIndex = 10;
+            this.close.Text = "Close";
+            this.close.Click += new System.EventHandler(this.close_Click);
             // 
             // mainMenu
             // 
@@ -70,6 +86,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(599, 411);
+            this.Controls.Add(this.close);
             this.Controls.Add(this.multiPlayer);
             this.Controls.Add(this.singlePlayer);
             this.Controls.Add(this.label1);
@@ -89,6 +106,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label singlePlayer;
         private System.Windows.Forms.Label multiPlayer;
+        private System.Windows.Forms.Label close;
     }
 }
 

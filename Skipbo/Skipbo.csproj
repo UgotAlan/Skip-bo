@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameBoard.Designer.cs">
+      <DependentUpon>GameBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiPlayer.Designer.cs">
+      <DependentUpon>MultiPlayer.cs</DependentUpon>
+    </Compile>
     <Compile Include="SinglePlayer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +84,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="MultiPlayer.resx">
+      <DependentUpon>MultiPlayer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SinglePlayer.resx">
       <DependentUpon>SinglePlayer.cs</DependentUpon>
     </EmbeddedResource>

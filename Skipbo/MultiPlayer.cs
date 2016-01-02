@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Skipbo
 {
-    public partial class SinglePlayer : Form
+    public partial class MultiPlayer : Form
     {
-        public SinglePlayer()
+        public MultiPlayer()
         {
             InitializeComponent();
             numPlayers.SelectedIndex = 0;

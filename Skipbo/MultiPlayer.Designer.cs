@@ -1,6 +1,6 @@
 ﻿namespace Skipbo
 {
-    partial class SinglePlayer
+    partial class MultiPlayer
     {
         /// <summary>
         /// Required designer variable.
@@ -194,7 +194,7 @@
             this.close.Text = "Close";
             this.close.Click += new System.EventHandler(this.close_Click);
             // 
-            // SinglePlayer
+            // MultiPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -211,7 +211,7 @@
             this.Controls.Add(this.explanationLabel);
             this.Controls.Add(this.titleLabel);
             this.ForeColor = System.Drawing.Color.White;
-            this.Name = "SinglePlayer";
+            this.Name = "MultiPlayer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Single Player Game";
             this.ResumeLayout(false);

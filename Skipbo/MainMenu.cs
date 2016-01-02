@@ -24,5 +24,18 @@ namespace Skipbo
             singlePlayer.ShowDialog();
             this.Show();
         }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void multiPlayer_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MultiPlayer multiPlayer = new MultiPlayer();
+            multiPlayer.ShowDialog();
+            this.Show();
+        }
     }
 }
