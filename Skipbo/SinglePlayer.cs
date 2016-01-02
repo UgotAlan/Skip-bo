@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace Skipbo
 {
-    public partial class Form1 : Form
+    public partial class SinglePlayer : Form
     {
-        public Form1()
+        public SinglePlayer()
         {
             InitializeComponent();
+            numPlayers.SelectedIndex = 0;
+            difficultyLevel.SelectedIndex = 1;
         }
     }
 }
