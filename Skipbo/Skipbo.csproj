@@ -72,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GameBoard.resx">
+      <DependentUpon>GameBoard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +86,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="MultiPlayer.resx">
       <DependentUpon>MultiPlayer.cs</DependentUpon>
@@ -102,6 +106,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card_3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card_4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card_5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card_6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card_7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card_8.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card_9.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card_10.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card_11.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card_12.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card_back.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card_skipbo.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
